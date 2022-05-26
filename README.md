@@ -12,7 +12,7 @@ there are definitive differences between Hip Hop and all other genres in regards
 sentiment and lyric topics. It is clear that various dance genres like Samba Sertanejo,
 and Funk Carioca do not focus on complicated words, and generally keep the mood
 light and simple.
-### Analysis of Genre’s Lyrics
+## Analysis of Genre’s Lyrics
 #### Data Description and Transformation
 The following dataset used was downloaded from [Kaggle](https://www.kaggle.com/datasets/neisse/scrapped-lyrics-from-6-genres), which contains both a
 dataset full of lyrics for each artist, and artist metadata, such as general genre and
@@ -24,13 +24,15 @@ so the first major transformation was translating all Non-English languages usin
 were present
 
 **Figure 1. Distribution Of Languages Before Sampling**
+
+
 ![](https://github.com/GrantRedfield/MusicGenreLyricAnalysis/blob/main/images/Figure_1.png)
 
 
 The second transformation was a reduction in songs to analyze. I sampled 500 songs in
 each genre to give an equal representation. This reduction helped speed up runtime,
 especially when conducting Principal Component Analysis (PCA).
-Principal Component Analysis
+## Principal Component Analysis
 The first analysis conducted on our dataset was PCA. We took our TFIDF table, bagged
 our dataset by artist and compared the first most significant principal components
 against each other. Below you can see each artist highlighted by their dominating
@@ -48,7 +50,7 @@ compared to the other three, which seem to be equally spread out on the PC0 axis
 indicates that the differences in language vary much more for the first three than the
 latter. It should also be noted that Samba, Sertanejo and Funk Carioca are the majority
 of our Spanish and Portuguese songs.
-Genre Topics
+## Genre Topics
 Conducting Latent Dirichlet Allocation (LDA), I was able to discover common topics
 grouped by genre. Assuming 30 total topics, the LDA model distributed the probability
 that each topic was being discussed per genre. Below are the most significant findings
@@ -60,7 +62,7 @@ that each topic was being discussed per genre. Below are the most significant fi
 
 
 
-All Other Genres Cross Over Topic
+**All Other Genres Cross Over Topic**
 
 
 **Figure 4. Topic #3 Intersection Topic**
@@ -106,7 +108,7 @@ never and feel overlap. This seems like a dichotomy that the genre Rock can poss
 Considering that Rock was widely distributed across our PCA graph (Figure 2), this indicates to
 me that Rock can possess different philosophies/meanings in regards to emotions per artist.
 
-Sentiment Analysis
+## Sentiment Analysis
 The last analysis is determining the general sentiment of each genre. I used a lexicon
 file, salex_nrc.csv, to identify 8 different emotions within the lyrics; Anger, Anticipation,
 Disgust, Fear, Joy ,Sadness, Surprise and Trust. After mapping each term in our lyrics
@@ -135,18 +137,23 @@ Hip Hop is the most negative, and amba, Sertanejo, and Pop are clearly positive.
 can clearly swing either way, and based off of the previous research this coincides with
 the Word2Vec results as well as the LDA topics.
 
-Conclusions
+## Conclusions
 After the conducted research, we can conclude a couple of general patterns around the
 genres available in our dataset.
+
 ● Hip Hop appears to have the most diverse and expressive language between our
 6 genres, and at the same time has the most negative emotion put into the lyrics.
+
 ● Samba, Funk Carioca , and Sertanejo generally have simple lyrics and tend to be
 more positive. This is likely due to more focus on the instrumental aspect of the
 songs, encouraging dance rather than passive listening.
+
 ● Rock covers the widest range of emotions, and gives a diverse range of words to
 describe the topics at hand
+
 ● Pop general generally has positive and lighthearted lyrics.
 Limitations And Future Research
+
 The dataset clearly limited us to 6 genres, so certain findings could be biased based off of our
 current available genres. The translation of Portuguese and Spanish songs may have limited
 the artists true words and emotions put into the songs. For future research, we hope to expand
