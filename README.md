@@ -16,7 +16,7 @@ light and simple.
 #### Data Description and Transformation
 The following dataset used was downloaded from [Kaggle](https://www.kaggle.com/datasets/neisse/scrapped-lyrics-from-6-genres), which contains both a
 dataset full of lyrics for each artist, and artist metadata, such as general genre and
-language spoken. The dataset was web scraped from the website [Vagalume] (https://www.vagalume.com.br/), which is a
+language spoken. The dataset was web scraped from the website [Vagalume](https://www.vagalume.com.br/), which is a
 brazilian music website, which contains many different languages and genres.
 In order to analyze this data, it was necessary to transform all languages into English,
 so the first major transformation was translating all Non-English languages using a
