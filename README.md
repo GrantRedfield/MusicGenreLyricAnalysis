@@ -47,6 +47,8 @@ Conducting Latent Dirichlet Allocation (LDA), I was able to discover common topi
 grouped by genre. Assuming 30 total topics, the LDA model distributed the probability
 that each topic was being discussed per genre. Below are the most significant findings
 2
+
+![](https://github.com/GrantRedfield/MusicGenreLyricAnalysis/blob/main/images/Figure_3_Hip_Hop.jpg)
 Figure 3. Hip Hop’s Top Topics
 All Other Genres Cross Over Topic
 Figure 4. Topic #3 Intersection Topic
