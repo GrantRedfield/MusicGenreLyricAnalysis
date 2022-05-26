@@ -33,7 +33,7 @@ our dataset by artist and compared the first most significant principal componen
 against each other. Below you can see each artist highlighted by their dominating
 Genre.
 
-![](https://github.com/GrantRedfield/MusicGenreLyricAnalysis/blob/main/images/PCA.png)
+![](https://github.com/GrantRedfield/MusicGenreLyricAnalysis/blob/main/images/PCA.jpg)
 
 Figure 2. PC0 vs PC1 For All Genres
 The first noticeable observation is that Hip Hop, Rock, and Pop contribute to the most
