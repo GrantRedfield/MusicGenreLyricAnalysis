@@ -32,6 +32,9 @@ The first analysis conducted on our dataset was PCA. We took our TFIDF table, ba
 our dataset by artist and compared the first most significant principal components
 against each other. Below you can see each artist highlighted by their dominating
 Genre.
+
+![](https://github.com/GrantRedfield/MusicGenreLyricAnalysis/blob/main/images/PCA.png)
+
 Figure 2. PC0 vs PC1 For All Genres
 The first noticeable observation is that Hip Hop, Rock, and Pop contribute to the most
 variance in PC0. Samba, Sertanejo and Funk Carioca are extremely clustered
